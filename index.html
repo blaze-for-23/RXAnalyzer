@@ -163,9 +163,9 @@ body {
                 <label class="custom-control-label" for="customCheck1">Remember password</label>
               </div> -->
               <button class="btn btn-lg btn-primary btn-block text-uppercase signin" type="submit">Check In</button>
-             <!--  <hr class="my-4">
-              <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-              <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> -->
+              <hr class="my-4">
+              <button class="btn btn-lg btn-google btn-block text-uppercase monthly" type="submit">Check Monthly Database</button>
+              <!-- <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button> -->
             </form>
           </div>
         </div>
@@ -190,6 +190,9 @@ body {
 
       // }
 
+    });
+    $('.monthly').on('click', function(e){
+      window.location = 'monthly.html';
     });
   });
   </script>
