@@ -1,0 +1,16 @@
+.monthly_label{
+	margin-top: 1%;
+	font-size: 12pt;
+}
+.table-header{
+	text-align: center;
+	font-size: 15pt;
+	font-weight: 540;
+	border: 2px solid black;
+}
+.pdid{
+	text-align: center;
+	font-size: 13pt;
+	font-weight: 500;
+	border: 1px solid black;
+}

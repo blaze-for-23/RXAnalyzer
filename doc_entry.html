@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RXAnalyzer</title>
+
+		<link rel="icon" type="image/png" href="images/rx-contract.png" >
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="doc_entry.css">
+
+	<script src="database.js"></script>
+	<script src="doc_entry.js"></script>
+</head>
+<body>
+<!-- ############ NAVBAR ############## -->
+
+
+	<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+      <!-- Logo Placeholder for Inlustration -->
+      <a href="#home"> <span><img src="images/rx-contract.png" width="32px" height="32px"></span> <span class="rx">RX</span>Analyzer</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="#home">Home</a></li><!--
+   --><li><a href="#services">Services</a></li><!--
+   --><li><a href="#about">About</a></li><!--
+   --><li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+
+<!-- ############# END NAVBAR ################ -->
+
+<!-- ####### CONTENT ########## -->
+
+<div class="container-fluid page-content">
+<div class="row">
+	<div class="col-md-12 ">
+		<div class="page-header">
+			PATIENT DATA ENTRY
+			<span class="upper-submit">
+				<button type="submit" class="btn btn-success submit_data">Submit</button>
+			</span>
+		</div>
+	</div>
+
+	<!-- ###### RIHT WING ######### -->
+	<div class="col-md-10">
+		
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-sm-12">
+				<div style="font-size: 20pt;" class="section-header">
+					Prescription
+				</div>
+			</div>
+
+			<!-- <div class="col-sm-1 table-header"> Sr. No. </div> -->
+			<div class="col-sm-2 table-header"> Brand Name </div>
+			<div class="col-sm-2 table-header"> Generic Name </div>
+			<div class="col-sm-1 table-header"> Dose </div>
+			<div class="col-sm-1 table-header"> Duration </div>
+			<div class="col-sm-2 table-header"> Frequency </div>
+			<div class="col-sm-1 table-header"> Quantity </div>
+			<div class="col-sm-2 table-header"> Refill Dare </div>
+			<div class="col-sm-1 table-header"> Remove </div>
+
+			<form id="table_form">
+			
+			</form>
+			<div class="col-md-4">
+				
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-success btn-lg" type="button"  data-toggle="modal" data-target="#myModal" id="summary_button"> Get Summary  </button>
+			</div>
+			<div class="col-md-4"></div>
+
+			<!-- Input vals -->
+			<div class="col-md-12">
+				<div class="row">
+					<form>
+						<div class="form-group" >
+							    <div class="col-sm-6">
+							    <label for="name">Chief Complaints:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="name">Medical History:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+						</div>
+						<div class="form-group" >
+							    <div class="col-sm-6">
+							    <label for="name">Medication History:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="name">Allergies:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+						</div>
+						<div class="form-group" >
+							    <div class="col-sm-6">
+							    <label for="name">Diagnosis:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="name">Social History:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+						</div>
+						<div class="col-md-12">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12" style="margin-top: 2%">
+										 <label >Resistance Pattern:</label>
+									</div>
+									<div class="col-md-12" >
+										 <label >Resistant to:</label>
+									</div>
+									
+									<div class="form-group" >
+										    <div class="col-sm-6">
+										    
+										    <input type="text" class="form-control" value="Ceftazidime" disabled="">
+										    </div>
+										    <div class="col-sm-6">
+										   
+										    <input type="text" class="form-control" value="Clavulanic Acid" disabled="">
+										    </div>
+									</div>
+
+									<div class="form-group" >
+										    <div class="col-sm-6">
+										    
+										    <input type="text" class="form-control" value="Piperaciilin" disabled="">
+										    </div>
+										    <div class="col-sm-6">
+										   
+										    <input type="text" class="form-control" value="Tazobactum" disabled="">
+										    </div>
+									</div>
+									<div class="col-md-12" style="margin-top: 1%" >
+										 <label >Sensitive to:</label>
+									</div>
+
+									<div class="form-group" >
+										    <div class="col-sm-6">
+										    
+										    <input type="text" class="form-control" value="Ciprofloxacin" disabled="">
+										    </div>
+										    <div class="col-sm-6">
+										   
+										    <input type="text" class="form-control" value="Ampicillin" disabled="">
+										    </div>
+									</div>
+									<div class="form-group" >
+										    <div class="col-sm-6">
+										    
+										    <input type="text" class="form-control" value="Ciprofloxacin" disabled="">
+										    </div>
+										    <div class="col-sm-6">
+										   
+										    <input  type="hidden" class="form-control" value="" disabled="">
+										    </div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-md-12" style="margin-top: 3%">
+			<div class="container-fluid"><div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-3">
+					<button onclick="location.href='lab_reports.html'"  class="btn btn-success">Lab Reports</button>
+				</div>
+				<div class="col-md-2">
+					
+				</div>
+				<div class="col-md-3">
+					<button class="btn btn-success">Counselling Points</button>
+				</div>
+
+				<div class="col-md-2">
+					
+				</div>
+			</div></div></div>
+
+		</div>
+	</div>
+
+	</div>
+	<!-- ###### END RIGHT WING ########## -->
+
+	<!-- ###### LEFT WING ######### -->
+	<div class="col-md-2">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div style="font-size: 20pt"; class="section-header"> Tablets </div>
+				</div>
+
+				<div class="col-sm-12 list-container">
+					<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Tablets">
+
+					<ul id="myUL">
+					  <li><a class="tablet" href="#">Amoxicillin</a></li>
+					  <li><a class="tablet" href="#">Clavunate</a></li>
+
+					  <li><a class="tablet" href="#">B-Complex</a></li>
+					  <li><a class="tablet" href="#">Cefixime</a></li>
+
+					  <li><a class="tablet" href="#">Domperidone</a></li>
+					  <li><a class="tablet" href="#">Rolic Acid</a></li>
+					  <li><a class="tablet" href="#">Ferrous Sulphate</a></li>
+
+					  <li><a class="tablet" href="#">Rabeprazole</a></li>
+					  <li><a class="tablet" href="#">Ondensetron</a></li>
+					  <li><a class="tablet" href="#">Estradoil</a></li>
+
+					  <li><a class="tablet" href="#">Ethinyl-estradoil</a></li>
+					  <li><a class="tablet" href="#">Azithromycin</a></li>
+					  <li><a class="tablet" href="#">Paracetamol</a></li>
+					  <li><a class="tablet" href="#">Telmisartan</a></li>
+					  <li><a class="tablet" href="#">Amlodipine</a></li>
+					  <li><a class="tablet" href="#">Vitcofol</a></li>
+					  <li><a class="tablet" href="#">Teniligliptin</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- ####### END LEFT WING ####### -->
+
+</div>
+	
+</div>
+
+<!-- ########## MODAL ############## -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+
+                </button>
+                 <h4 class="modal-title" id="myModalLabel">Summary</h4>
+
+            </div>
+            <div class="modal-body">
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#patientTab" aria-controls="uploadTab" role="tab" data-toggle="tab">Patient</a>
+
+                        </li>
+                        <li role="presentation"><a href="#doctorTab" aria-controls="browseTab" role="tab" data-toggle="tab">Doctor</a>
+
+                        </li>
+                        <li role="presentation"><a href="#hospitalTab" aria-controls="browseTab" role="tab" data-toggle="tab">Hospital</a>
+
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="patientTab">
+
+                        <div class="container-fluid">
+                        	<div class="row">
+                        		<form >
+                        			<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="patient_drugs" class="col-sm-7 control-label">Number of drugs Prescribed</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="patient_drugs" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="patient_antibiotics" class="col-sm-7 control-label">Number of antibiotics</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="patient_antibiotics" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="patient_injections" class="col-sm-7 control-label">Number of injections</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="patient_injections" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="patient_gn" class="col-sm-7 control-label">Number of generic names</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="patient_gn" placeholder="3" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="patient_edl" class="col-sm-7 control-label">Number of drugs from EDL</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="patient_edl" placeholder="1" disabled="">
+								        </div>
+								    </div>
+								    <!-- <div class="form-group">
+								        <label for="patient_dose" class="col-sm-7 control-label">Total dose</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" placeholder="0" id="patient_dose" disabled="">
+								        </div>
+								    </div> -->
+								</div>
+
+								</form>
+
+                        	</div>
+                        </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="doctorTab">
+                        	<div class="container-fluid">
+                        	<div class="row">
+                        		<form >
+                        			<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="doctor_drugs" class="col-sm-7 control-label">Number of drugs Prescribed</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="doctor_drugs" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="doctor_antibiotics" class="col-sm-7 control-label">Number of antibiotics</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="doctor_antibiotics" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="doctor_injections" class="col-sm-7 control-label">Number of injections</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="doctor_injections" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="doctor_gn" class="col-sm-7 control-label">Number of generic names</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="doctor_gn" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="doctor_edl" class="col-sm-7 control-label">Number of drugs from EDL</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="doctor_edl" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="doctor_dose" class="col-sm-7 control-label">Total dose</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" placeholder="0" id="doctor_dose" disabled="">
+								        </div>
+								    </div>
+								</div>
+
+								</form>
+
+                        	</div>
+                        </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="hospitalTab">
+                        	<div class="container-fluid">
+                        	<div class="row">
+                        		<form >
+                        			<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="hospital_drugs" class="col-sm-7 control-label">Number of drugs Prescribed</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="hospital_drugs" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="hospital_antibiotics" class="col-sm-7 control-label">Number of antibiotics</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="hospital_antibiotics" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="hospital_injections" class="col-sm-7 control-label">Number of injections</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="hospital_injections" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="hospital_gn" class="col-sm-7 control-label">Number of generic names</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="hospital_gn" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								</div>
+								<div class="col-md-12">
+								    <div class="form-group">
+								        <label for="hospital_edl" class="col-sm-7 control-label">Number of drugs from EDL</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" id="hospital_edl" placeholder="0" disabled="">
+								        </div>
+								    </div>
+								    <div class="form-group">
+								        <label for="hospital_dose" class="col-sm-7 control-label">Total dose</label>
+								        <div class="col-sm-5">
+								            <input type="text" class="form-control" placeholder="0" id="hospital_dose" disabled="">
+								        </div>
+								    </div>
+								</div>
+
+								</form>
+
+                        	</div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Okay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ############ END MODAL ############### -->
+
+
+
+<!--  ######## END CONTENT ######### -->
+
+<script type="text/javascript">
+	
+	$('document').ready(function(){
+
+		$('.submit_data').on('click', function(e){
+			alert('Data Submit Successful');
+			window.location = 'login.html';
+		});
+
+	});
+
+</script>
+
+
+</body>
+</html>

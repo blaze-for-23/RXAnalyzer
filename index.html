@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RXAnalyzer</title>
+
+		<link rel="icon" type="image/png" href="images/rx-contract.png" >
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="nav.css">
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<script src="index.js"></script>
+
+</head>
+<body>
+
+	<nav id="navbar" class="">
+  <div class="nav-wrapper">
+    <!-- Navbar Logo -->
+    <div class="logo">
+      <!-- Logo Placeholder for Inlustration -->
+      <a href="#home"><i class="fas fa-chess-knight"></i> <span><img src="images/rx-contract.png" width="32px" height="32px"></span> <span class="rx">RX</span>Analyzer</a>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul id="menu">
+      <li><a href="#home">Home</a></li><!--
+   --><li><a href="#services">Services</a></li><!--
+   --><li><a href="#about">About</a></li><!--
+   --><li><a href="#contact">Contact</a></li>
+   	<li><a href="login.html">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- Menu Icon -->
+<div class="menuIcon">
+  <span class="icon icon-bars"></span>
+  <span class="icon icon-bars overlay"></span>
+</div>
+
+
+<div class="overlay-menu">
+  <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+</div>
+
+<div class="container-fluid page-content">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header"> PATIENT PROFILE: 
+			<span class="upper-submit">
+				<button type="submit" class="btn btn-success submit_data">Submit</button>
+			</span>  
+			</div>
+		</div>
+		<!-- Clearing the float -->
+		<div style="float: none;"></div>
+		<div class="col-md-8 section-pane left-pane">
+			<div class="container-fluid" >
+				<div class="row">
+					
+					<div class="col-sm-3"  style="overflow: hidden;">
+						<div  style="margin: 1%; ">
+						<img class="profile-pic" style="border-radius: 10px; margin-top: 7%; border: 5px solid #508994;" height="225" width="225" src="images/lady.jpg">
+						</div>
+					</div>
+					<div class="col-md-9" >
+						<div class="section-header"> Personal Information</div>
+						<div class="col-sm-12" >
+							<form action="">
+							  <div class="form-group" >
+							    <div class="col-sm-6">
+							    <label for="name">Patient Name:</label>
+							    <input type="text" class="form-control" id="name">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="bgroup">Blood Group:</label>
+								  <select class="form-control" name="bgroup" id="bgroup">
+								    <option>A+</option>
+								    <option>A-</option>
+								    <option>B+</option>
+								    <option>B-</option>
+								    <option>AB+</option>
+								  	<option>AB-</option>
+								  	<option>O+</option>
+								  	<option>O-</option>
+								  	<option>Other</option>
+								  </select>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<div class="col-sm-3">
+							    <label for="age">Age:</label>
+							    <input type="number" class="form-control" name="age" id="age">
+							    </div>
+							    <div class="col-sm-3">
+							    <label for="sex">Sex:</label>
+							    <select class="form-control" name="sex" id="sex">
+								    <option>Male</option>
+								    <option>Female</option>
+								    <option>Other</option>
+								    
+								  </select>
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="phone">Phone Number:</label>
+							    <input type="number" class="form-control" name="phone" id="phone">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="pid">Patient ID:</label>
+							    <input type="number" class="form-control" name="pid" id="pid">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="address">Address:</label>
+							    <input type="text" class="form-control" name="address" id="address">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="aadhaar">Aadhaar:</label>
+							    <input type="number" class="form-control" name="aadhaar" id="aadhaar">
+							    </div>
+							    <div class="col-sm-6">
+							    <label for="email">Email:</label>
+							    <input type="email" class="form-control" name="email" id="email">
+							    </div>
+							  </div>
+							  <div class="col-sm-12" style="border: 1px solid black; margin-top: 2%; margin-bottom: 2%"></div>
+							  <div class="col-md-12 section-header" >
+							  	Medical Information
+							  </div>
+							  
+							  <div class="form-group">
+							  	<div class="col-sm-6">
+							  		<label for="referal">Referal Doctor:</label>
+							    	<input type="text" class="form-control" name="referal" id="referal">
+							  	</div>
+							  	<div class="col-sm-6">
+							  		<label for="tpatient">Type of Patient:</label>
+							    	<select class="form-control" name="tpatient" id="tpatient">
+								    <option>General</option>
+								    <option>Pediatric</option>
+								    <option>Geriative</option>
+								    <option>Pregnant</option>
+								    <option>Lactating</option>
+								    <option>Other</option>
+								  </select>							  	
+								  </div>
+							  </div>
+							  <div class="form-group">
+							  	<div class="col-sm-12">
+							  		<label for="speciality">Speciality:</label>
+							    	<select class="form-control" name="speciality" id="speciality">
+								    <option>Dept. of OBGY</option>
+								    <option>Other</option>
+								  </select>
+							  	</div>
+							  </div>
+							  <div class="form-group">
+							  	<div class="col-sm-12">
+							  		<label for="dname">Doctor Name:</label>
+							    	<input type="text" class="form-control" name="dname" id="dname">
+							  	</div>
+							  </div>
+							  <div class="form-group">
+							  	<div class="col-sm-12">
+							  		<label for="pnumber">Registered Medical Practioner Number:</label>
+							    	<input type="text" class="form-control" name="pnumber" id="pnumber">
+							  	</div>
+							  </div>
+							  <div class="form-group">
+							  	<div class="col-sm-12" style="margin-top: 2%; margin-left: 40%">
+							  	<button type="submit" class="btn btn-success submit_data">Submit</button>
+							  	</div>
+							  </div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="col-md-4 section-pane right-pane">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12 section-header">
+						Insurance Information
+					</div>
+					<form >
+					<div class="col-sm-10">
+						<ul class="list-group">
+						  <li class="list-group-item active">Policy</li>
+						  <li class="list-group-item"> 
+						  <input type="text" name="policy" class="form-control">
+						   </li>
+						  
+						</ul>
+					</div>
+					<div class="col-sm-10">
+						<ul class="list-group">
+						  <li class="list-group-item active">Health Insurance</li>
+						  <li class="list-group-item">
+						  <div style="margin-left: 25%">
+						  	<span class="health-toggle health-toggle-no">NO </span><label class="switch">
+							  <input type="checkbox">
+							  <span class="slider round"></span>
+							</label> <span class="health-toggle health-toggle-yes"> YES </span>
+							</div>
+						  </li>
+						</ul>
+					</div>
+					<div class="col-sm-10">
+						<ul class="list-group">
+						  <li class="list-group-item active">Policy Number</li>
+						  <li class="list-group-item"> 
+						  <input type="text" name="policynumber" class="form-control">
+						   </li>
+						  
+						</ul>
+					</div>
+					
+					</form>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+	$('document').ready(function(){
+
+		$('.submit_data').on('click', function(e){
+			window.location = 'doc_entry.html';
+		});
+
+	});
+
+</script>
+
+</body>
+</html>

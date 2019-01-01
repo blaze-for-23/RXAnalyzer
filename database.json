@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Amoxicillin",
+    "brands": [
+        "brand1", "brand2", "sabclav-625"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+      
+  },
+  
+  {
+    "name": "B-Complex",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Cefixime",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Domperidone",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Rolic Acid",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Ferrous Sulphate",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Rabeprazole",
+    "brands": [
+        "Rabemac", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Ondensetron",
+    "brands": [
+        "Emigo MD", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Estradiol",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Ethinyl-Estradiol",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Azithromycin",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  },
+  {
+    "name": "Paracetmol",
+    "brands": [
+        "brand1", "brand2", "brand3"
+      ],
+    "doses": [
+        500, 200, 300
+      ]
+  }
+  
+  
+]
